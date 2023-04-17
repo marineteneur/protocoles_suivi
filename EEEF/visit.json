@@ -2,7 +2,7 @@
   "chained": false,
   "display_properties": [
     "id_dataset",
-    "observers",
+    "observeurs",
     "visit_date_min",
     "tech_gestion",
     "comments",
@@ -13,7 +13,9 @@
   ],
   "display_list": [
     "visit_date_min",
-    "id_digitiser"
+    "tech_gestion",
+    "observeurs",
+    "haut_max"
   ],
   "specific": {
     "tech_gestion": {
@@ -22,17 +24,16 @@
       "attribut_label": "Technique de gestion",
       "values": ["Aucune gestion","Arrachage","Fauche","Cerclage","Paturage","Bachage", "Autre technique de lutte à préciser"]
     },
-    "observers": {
+    "observeurs": {
       "type_widget": "select",
       "required": true,
       "attribut_label": "Observateur",
       "values": ["Anthony Voute","Grégory Hebrard","Juliette Rabdeau"]
     },
     "surface": {
-      "type_widget": "select",
+      "type_widget": "number",
       "required": false,
-      "attribut_label": "Pluie",
-      "values": ["1-Absente", "2-Intermittente", "3-Continue"]
+      "attribut_label": "Surface (en m²)"
     },
     "densite": {
       "type_widget": "select",
@@ -64,6 +65,10 @@
     "comments": {
       "hidden": false,
       "attribut_label": "Commentaires"
+    },
+    "observers": {
+      "hidden": true,
+      "required": false
     }
   }
 }
