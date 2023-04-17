@@ -1,0 +1,115 @@
+{
+  "genre":"M",
+  "label": "Placette",
+  "label_list": "Placette",
+  "map_label_field_name": "sites_group_name",
+  "geometry_type": "LineString",
+  "display_properties": [
+     "sites_group_code",             
+     "sites_group_name",        
+     "date_obs",
+     "type_obs",        
+     "type_foret",         
+     "habitat",    
+     "type_peuplement",         
+     "essence_dom",         
+     "couv_forest",         
+     "buis_pres",         
+     "recouv_buis",         
+     "annee_defolia" 
+  ],
+  "display_list": [
+    "sites_group_name",
+    "nb_sites"
+  ],
+  "specific": {
+    "sites_group_code": {
+      "type_widget": "text",
+      "attribut_label": "Code CO"
+  },
+    "sites_group_name": {
+      "type_widget": "textarea",
+      "attribut_label": "Code Placette (Dept + numéro d'ordre + R si recepage)"
+  },
+  "sites_group_description": {
+    "type_widget": "textarea",
+    "attribut_label": "Commentaire",
+    "hidden":true
+  },
+  "comments": {
+    "type_widget": "textarea",
+    "attribut_label": "Commentaire",
+    "hidden":true
+  },
+    "date_obs": {
+      "type_widget": "date",
+      "attribut_label": "Date Observation",
+      "required": true
+    },
+    "medias": {
+      "hidden": true
+    },
+    "type_obs": {
+      "type_widget": "select",
+      "attribut_label": "Type d'observation",
+      "required": true,
+      "values": ["Installation", "Suivi évolution"]
+    },
+  "type_foret": {
+    "type_widget": "select",
+    "attribut_label": "Type de fôret",
+    "required": true,
+    "values": ["FD", "AFP", "FP"]
+  },
+  "type_peuplement": {
+    "type_widget": "select",
+    "attribut_label": "Type de peuplement",
+    "required": true,
+    "values": ["A définir", "A définir", "A définir"]
+  },
+  "essence_dom": {
+    "type_widget": "select",
+    "attribut_label": "Essence dominante",
+    "required": true,
+    "values": ["A définir", "A définir", "A définir"]
+  },
+  "buis_pres": {
+    "type_widget": "select",
+    "attribut_label": "Buis présent ",
+    "required": true,
+    "values": ["sous étages (SE)", "seul (AL)", "mélange avec autre essences (ME)"]
+  },
+  "recouv_buis": {
+    "type_widget": "number",
+    "attribut_label": "Couvert Forestier libre (%)",
+    "required": false,
+    "min": 0,
+    "max": 100
+  },
+  "couv_forest": {
+    "type_widget": "number",
+    "attribut_label": "Recouvrement du sous étage de buis (%)",
+    "required": false,
+    "min": 0,
+    "max": 100
+  },
+  "annee_defolia": {
+    "type_widget": "date",
+    "attribut_label": "Année de défoliation totale ",
+    "values": "12/04/2023"
+  },
+  "habitat":{
+    "type_widget": "datalist",
+    "attribut_label": "Type d’habitat",
+    "api": "habref/habitats/autocomplete",
+    "application": "GeoNature",
+    "keyValue": "cd_hab",
+    "keyLabel": "search_name",
+    "type_util": "habitat",
+    "params": {
+        "cd_typo": 8,
+        "search_name": ""
+    }
+  }
+  }
+}
