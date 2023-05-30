@@ -35,7 +35,7 @@
       "keyLabel": "label_fr",
       "data_path": "values",
       "type_util": "nomenclature",
-      "filters": {"cd_nomenclature": ["1","2","3"]},
+      "filters": {"label_default": ["Indéterminé","Femelle","Mâle"]},
       "required": true,
       "default": {
         "cd_nomenclature": "1"
