@@ -50,6 +50,7 @@
       "keyLabel": "label_fr",
       "data_path": "values",
       "type_util": "nomenclature",
+      "filters": {"label_default": ["Inconnu","Chrysalide","Imago","Emergent","Chenille","Œuf"]},
       "required": true
     },
     "id_nomenclature_determination_method": {
