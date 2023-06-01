@@ -43,14 +43,14 @@
     },
     "id_nomenclature_stade": {
       "type_widget": "datalist",
-      "attribut_label": "Stade de vie : stade de développement du sujet",
+      "attribut_label": "Stade Biologique",
       "api": "nomenclatures/nomenclature/STADE_VIE",
       "application": "GeoNature",
       "keyValue": "id_nomenclature",
       "keyLabel": "label_fr",
       "data_path": "values",
       "type_util": "nomenclature",
-      "filters": {"label_default": ["Inconnu","Chrysalide","Imago","Emergent","Chenille","Œuf"]},
+      "filters": {"label_default": ["Inconnu","Chrysalide","Imago","Chenille","Œuf"]},
       "required": true
     },
     "id_nomenclature_determination_method": {

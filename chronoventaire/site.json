@@ -1,8 +1,8 @@
-{ "label": "Stations d'inventaire",
-  "label_list": "Stations d'inventaire",
+{ "label": "Station d'inventaire",
+  "label_list": "Station d'inventaire",
   "map_label_field_name": "base_site_name",
   "genre":"F",
-  "geometry_type": "Point",
+  "geometry_type": "Polygon",
   "display_properties": [
     "id_inventor",
     "first_use_date",
@@ -99,11 +99,11 @@
     },
     "comment_site": {
       "type_widget": "text",
-      "attribut_label": "Détail sur la placette"
+      "attribut_label": "Description libre de l’habitat"
     },
     "base_site_name": {
       "type_widget": "text",
-      "attribut_label": "Nom du la station.",
+      "attribut_label": "Nom de la station",
       "required": true
     },
     "nb_visits": {
